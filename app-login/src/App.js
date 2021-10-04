@@ -62,8 +62,7 @@ const App = () => {//i const
         }
       });
   };
-
-  const handleLogout = () => {
+    const handleLogout = () => {
     fire.auth().signOut();
   };
 
