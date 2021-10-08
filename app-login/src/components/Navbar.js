@@ -13,7 +13,7 @@ const Navbar = ({ show }) => {
                 </li>
                 <li>
                     <Link to="/teste" className="active">
-                    teste
+                    testes
                     </Link>
                 </li>
             </ul>
