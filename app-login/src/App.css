@@ -17,6 +17,17 @@ button {
   cursor        : pointer;
 }
 
+.btnLogout{
+  border: 1px solid black;
+  width : 100%;
+  height: 60px;
+}
+
+.btnLogout:hover{
+  background-color: #3a2b58;
+
+}
+
 .login {
   width     : 100%;
   min-height: 100vh;
@@ -117,20 +128,46 @@ button {
   background: #3a2b58;
 }
 
-.SideBar {
-  height          : 100vh;
-  width           : 250px;
-  background-color: #603bbb;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.59);
+header{
+  padding: 30px;
+  background: #e9e9e9;
+  height: 70px;
+  margin-top: -10px;
 }
 
-.SideBarList {
-  height : auto;
+/**.hamburguer{
+  background-color: aqua;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}*/
+
+.sidenav{
+  width: 240px;
+  background: #603bbb;
+  position: absolute;
+  height: 95vh;
   padding: 0;
-  width  : 100%;
+  left: -100%;
+  transition: all 0.3s;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.59);
 }
 
-.SideBarList .row {
+.sidenav.active{
+  left: 0; 
+}
+
+ul{
+  padding: 0;
+}
+
+ul li{
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li a {
   width : 100%;
   height: 60px;
   border: 1px solid black;
@@ -142,32 +179,26 @@ button {
   align-items: center;
 }
 
-.SideBarList .row:hover{
-  cursor: pointer;
+ul li a:hover{
   background-color: #3a2b58;
 }
-.SideBarList #active{
+ul li a.active{
   background-color: aqua;
 }
-.row #icon{
-  flex: 30%;
-  display: grid;
-  place-items: center;
+
+ul li a svg{
+  margin-right: 10px;
 }
 
-.row #title{
-  flex: 70%;
-} 
-
-.menu .menuClose{
-  display: none;
-  width: 0px;
+header svg{
+  font-size: 40px ;
 }
 
-.hamburguer{
-  top: 50%;
-  left: 10%;
-  width: 30px;
-  height: 6px;
-  background-color: rosybrown;
+.main{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: yellow;
 }
